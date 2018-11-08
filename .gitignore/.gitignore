@@ -1,0 +1,18 @@
+var personObject = {
+    name: "Lisette Gorra",
+    age: 33,
+    dateOfBirth: "May 1, 1985",
+    weightLbs: 135,
+    weightKilo: 61.23,
+    heightFt: 5.4,
+    heightMeter: 1.60
+    //divide your weight in kilograms (kg) by your height in metres (m)
+//then divide the answer by your height again to get your BMI.
+};
+
+var bmi = personObject.weightKilo / personObject.heightMeter;
+var bmi1 = bmi / personObject.heightMeter;
+var lisetteBmi = bmi1 
+console.log(bmi1);
+
+console.log("Our new client", personObject.name, "just qualified for coverage, with a BMI of", lisetteBmi.toFixed(2), "She is", personObject.age, "and her rate is going up on her birthday,", personObject.dateOfBirth + ".");
